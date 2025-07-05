@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f8f9fa;
+    }
+
+    #counter {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 10px 30px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="counter">5</div>
+  <button onclick="decrease()">Subtract 1</button>
+
+  <script>
+    let count = 5;
+
+    function decrease() {
+      count -= 1;
+      document.getElementById('counter').textContent = count;
+    }
+  </script>
+
+</body>
+</html>
